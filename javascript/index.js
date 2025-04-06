@@ -51,3 +51,4 @@ document.querySelectorAll(".deal-box h4").forEach((num) => {
 });
 
 
+
