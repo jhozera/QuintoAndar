@@ -200,7 +200,7 @@ body {
     font-size: 20px;
 }
 
-.text a:hover {
+.button-app a:hover {
     background-color: #0e9bdd;
     transition: 0.5s;
 }
@@ -223,8 +223,6 @@ body {
     opacity: 1;
   }
 }
-
-
 
 .container {
     display: flex;
@@ -609,131 +607,221 @@ footer {
 }
 
 
+.rural-section {
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Montserrat', Arial, sans-serif;
 
-.modern-carousel {
-    width: 100%;
-    max-width: 1200px;
-    margin: 40px auto;
-    overflow: hidden;
-    position: relative;
-    font-family: sans-serif;
-  }
-  
-  .carousel-track {
+}
+
+.rural {
     display: flex;
-    transition: transform 0.5s ease;
-  }
-  
-  .carousel-slide {
-    min-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #fefae0;
-    border-radius: 12px;
-    overflow: hidden;
-  }
-  
-  .left-content {
-    flex: 1;
-    padding: 40px;
-  }
-  
-  .left-content h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .left-content p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-  }
-  
-  .left-content button {
-    padding: 12px 24px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-bottom: 10px;
-  }
-  
-  .left-content a {
-    display: block;
-    margin-top: 10px;
-    color: black;
-    font-weight: 500;
-    text-decoration: none;
-  }
-  
-  .right-content {
-    flex: 1;
-    display: flex;
-    align-items: center;
     justify-content: center;
-  }
-  
-  .right-content img {
-    width: 100%;
-    height: auto;
-    max-height: 350px;
-    object-fit: contain;
-  }
-  
-  .slide-image {
-    position: relative;
-    min-height: 400px;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    border-radius: 12px;
-    display: flex;
     align-items: center;
-    justify-content: flex-end;
-  }
-  
-  .slide-card {
-    background: white;
-    padding: 30px;
-    max-width: 300px;
-    margin-right: 40px;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-  }
-  
-  .slide-card h2 {
-    margin: 0 0 10px;
-    font-size: 1.5rem;
-  }
-  
-  .slide-card p {
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    transition: transform 0.3s ease; 
+    padding: 25px;
+
+}
+
+.rural1, .rural2, .rural3, .rural4 {
+    position: relative;
+    flex: 1;
+    max-width: 40%; 
+    height: 300px;  
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+    transition: transform 0.3s ease;  
+
+}
+
+.rural1 img, .rural2 img, .rural3 img, .rural4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    display: block;
+    transition: transform 0.3s ease;  
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(57, 87, 189, 0.6);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.overlay h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.overlay p {
+    font-size: 0.9rem;
     margin-bottom: 15px;
-  }
-  
-  .slide-card a {
-    color: black;
+}
+
+.overlay a {
+    color: #ffd700;
     font-weight: bold;
     text-decoration: none;
-  }
-  
-  .carousel-controls {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-  }
-  
-  .carousel-controls button {
-    background: white;
-    border: none;
-    font-size: 1.5rem;
-    padding: 6px 12px;
-    margin: 0 4px;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  }
-  
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.overlay a:hover {
+    color: #004869;
+}
+
+.rural1:hover, .rural2:hover, .rural3:hover, .rural4:hover {
+    transform: scale(1.05); 
+    transition: 1.0s;
+}
+
+.rural1:hover img, .rural2:hover img, .rural3:hover img, .rural4:hover img {
+    transform: scale(1.1);  
+    transition: 1.0s;
+
+}
+
+.rural-section h5{
+    color: #004869;
+    font-size: 30px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    padding: 40px;
+
+}
+
+#button-ft {
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Montserrat', Arial, sans-serif;
+
+}
+
+.button-ti {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #333;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.button-pt {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-pt:hover {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+}
+
+.txt-bu-ti {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  font-family: 'Montserrat', Arial, sans-serif;
+
+}
+
+.bt-content {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.txt-button {
+  font-size: 16px;
+  color: #333;
+  font-family: 'Montserrat', Arial, sans-serif;
+
+}
+
+.bt-content.show {
+  display: block;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #005fa3;
+}
+
+.app{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  background-color: #3957bd;
+}
+
+.bannerr{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: white;
+  overflow: hidden;
+}
+
+.bannerr img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+
+.bannerr::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); 
+  z-index: 0;
+}
+
+
+.button-app {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+  padding: 100px;
+  z-index: 1; 
+}
+
+.button-app h1 {
+  font-size: 30px;
+}
+
+
+
 
 @media (min-width:1300px) {
 
@@ -791,4 +879,8 @@ footer {
     .banner-imgg{
       display: none;
     }
+
+    .app{
+      flex-direction: column;
+    } 
 }  
